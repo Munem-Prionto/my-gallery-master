@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    --displayWidth : 70%;
+}
+body {
+
+    width: var(--displayWidth);
+    margin: auto;
+}
+/* PROFILE */
+.profile {
+    padding: 2rem 0rem;
+    text-align: center;
+}
+.img {
+    text-align: center;
+}
+.img img{
+
+    width: 20%;
+    border-radius: 12px;
+}
+.name {
+    font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0em;
+
+padding: .5rem 0rem;
+
+}
+.location {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+
+    color:#A9A9A9;
+
+    padding: .5rem 0rem;
+
+}
+
+.stats {
+    padding: 1.5rem 0rem;
+    width: var(--displayWidth);
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.block {
+    background: #E5E5E5;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+
+   /*  margin: 0rem 1rem; */
+
+}
+
+.block p:nth-child(1) {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #4E5150;
+
+
+}
+.block p:nth-child(2)  {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+ 
+    color: #BDBDBD;
+
+}
+
+/* GALLERY */
+.gallery {
+    padding:1rem 0rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "pic1 pic2 pic2"
+    "pic3 pic3 pic4"
+    "pic5 pic6 pic4";
+}
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.gallery div:nth-child(1) {grid-area: pic1;}
+.gallery div:nth-child(2) {grid-area: pic2;}
+.gallery div:nth-child(3) {grid-area: pic3;}
+.gallery div:nth-child(4) {grid-area: pic4;}
+.gallery div:nth-child(5) {grid-area: pic5;}
+.gallery div:nth-child(6) {grid-area: pic6;}
+
+footer {
+    padding: 2rem 0rem;
+    text-align: center;
+}
+footer a {
+    color: #333333;
+}
+
+
+@media only screen and (max-width: 750px) {
+    :root {
+        --displayWidth : 90%;
+    }
+    .block {
+        background: #E5E5E5;
+        border-radius: 12px;
+        padding: .5rem 1rem;
+    
+    }
+}
